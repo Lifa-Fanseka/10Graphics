@@ -127,16 +127,9 @@ function ProjectDetail() {
           </div>
 
           <div className="project-detail__description">
-            <p>
-              {project.description}
-            </p>
+            <p>{project.description}</p>
 
-            <p>
-              This project explores how strong
-              visual communication can turn an
-              idea into something people notice,
-              remember and engage with.
-            </p>
+            <p>{project.details}</p>
           </div>
         </section>
 
