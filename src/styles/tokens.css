@@ -1,0 +1,159 @@
+:root {
+  /* ================================
+     10 GRAPHICS — COLOURS
+     ================================ */
+
+  --color-cream: #f5f0e8;
+  --color-charcoal: #141412;
+  --color-coral: #e8583a;
+  --color-warm-gray: #8a857c;
+  --color-border: #ddd7ce;
+  --color-card: #ede8e0;
+  --color-dark: #1a1a18;
+
+  /* Transparent variants */
+  --color-cream-96: rgba(245, 240, 232, 0.96);
+  --color-charcoal-70: rgba(20, 20, 18, 0.7);
+  --color-charcoal-50: rgba(20, 20, 18, 0.5);
+  --color-charcoal-10: rgba(20, 20, 18, 0.1);
+  --color-charcoal-04: rgba(20, 20, 18, 0.04);
+
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+
+  /* ================================
+     TYPOGRAPHY
+     ================================ */
+
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --text-display-hero: clamp(80px, 9vw, 148px);
+  --text-display-brand: clamp(100px, 16vw, 220px);
+  --text-display-section: clamp(52px, 7vw, 100px);
+  --text-display-service: clamp(28px, 4.5vw, 60px);
+  --text-display-brief: clamp(32px, 6vw, 64px);
+  --text-display-detail: clamp(52px, 8vw, 120px);
+  --text-display-cta-sub: clamp(32px, 5vw, 72px);
+  --text-display-about: clamp(48px, 7vw, 96px);
+  --text-display-quote: clamp(26px, 3.5vw, 42px);
+  --text-display-cta: clamp(60px, 10vw, 160px);
+
+  --text-watermark-hero: clamp(200px, 40vw, 600px);
+  --text-watermark-brand: clamp(200px, 45vw, 700px);
+
+  --text-body-base: 16px;
+  --text-body-sm: 14px;
+  --text-label: 10px;
+  --text-label-btn: 11px;
+  --text-poster-card: 24px;
+  --text-brand-logo: 20px;
+  --text-service-num: 24px;
+
+  /* Line heights */
+  --leading-display: 0.88;
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-relaxed: 1.625;
+
+  /* Letter spacing */
+  --tracking-label: 0.3em;
+  --tracking-btn: 0.22em;
+  --tracking-nav: 0.22em;
+  --tracking-meta: 0.25em;
+  --tracking-hover: 0.2em;
+  --tracking-brand: 0.35em;
+  --tracking-wide: 0.05em;
+
+  /* ================================
+     SPACING
+     ================================ */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-36: 144px;
+  --space-48: 192px;
+
+  /* ================================
+     LAYOUT
+     ================================ */
+
+  --page-margin-desktop: 48px;
+  --page-margin-mobile: 24px;
+
+  --nav-height: 64px;
+
+  --max-content-width: 1280px;
+  --max-brief-width: 672px;
+  --max-detail-width: 1152px;
+
+  /* ================================
+     BORDERS
+     ================================ */
+
+  --radius: 0px;
+
+  --border-1: 1px solid #ddd7ce;
+  --border-dark: 1px solid #141412;
+  --border-footer: 1px solid rgba(255, 255, 255, 0.1);
+  --border-focus: 1px solid #141412;
+
+  /* ================================
+     SHADOWS
+     ================================ */
+
+  --shadow-2xl:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  /* ================================
+     TRANSITIONS
+     ================================ */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-overlay: 0.5s ease-in-out;
+
+  --transition-image:
+    0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  --transition-progress: 0.5s ease;
+
+  /* ================================
+     BREAKPOINT REFERENCES
+     ================================ */
+
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* ================================
+     GRID
+     ================================ */
+
+  --masonry-cols-desktop: 3;
+  --masonry-cols-tablet: 2;
+  --masonry-cols-mobile: 1;
+
+  --masonry-gap: 12px;
+
+  --hero-grid-desktop: 300px 1fr 300px;
+  --hero-grid-md: 250px 1fr 260px;
+}

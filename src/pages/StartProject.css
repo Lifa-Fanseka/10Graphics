@@ -1,0 +1,622 @@
+/* =================================
+   START A PROJECT
+   ================================= */
+
+.start-project {
+  min-height: 100vh;
+
+  padding-top: 150px;
+  padding-bottom: var(--space-36);
+
+  background: var(--color-cream);
+
+  color: var(--color-charcoal);
+}
+
+/* =================================
+   HEADER
+   ================================= */
+
+.start-project__header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.4fr;
+
+  align-items: end;
+
+  gap: var(--space-10);
+
+  padding-bottom: var(--space-16);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.start-project__header h1 {
+  margin-top: var(--space-6);
+
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    90px,
+    14vw,
+    210px
+  );
+
+  font-weight: 900;
+
+  line-height: 0.76;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.start-project__intro {
+  padding-bottom: 8px;
+}
+
+.start-project__intro p {
+  margin: 0 0 var(--space-5);
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-body-sm);
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: var(--tracking-wide);
+
+  text-transform: uppercase;
+}
+
+.start-project__intro span {
+  font-family: var(--font-body);
+
+  font-size: var(--text-label);
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: var(--tracking-meta);
+
+  color: var(--color-warm-gray);
+
+  text-transform: uppercase;
+}
+
+/* =================================
+   FORM
+   ================================= */
+
+.project-form {
+  width: 100%;
+}
+
+/* =================================
+   FORM SECTION
+   ================================= */
+
+.project-form__section {
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: var(--space-10);
+
+  padding: var(--space-16) 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-form__number {
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    28px,
+    3vw,
+    45px
+  );
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.project-form__content {
+  max-width: 900px;
+}
+
+.project-form__content > .label {
+  margin-bottom: var(--space-8);
+}
+
+/* =================================
+   FORM GRID
+   ================================= */
+
+.project-form__grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: var(--space-8);
+}
+
+/* =================================
+   LABELS
+   ================================= */
+
+.project-form label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.project-form label > span {
+  font-family: var(--font-body);
+
+  font-size: var(--text-label);
+
+  font-weight: 600;
+
+  letter-spacing: var(--tracking-meta);
+
+  text-transform: uppercase;
+}
+
+/* =================================
+   INPUTS
+   ================================= */
+
+.project-form input,
+.project-form select,
+.project-form textarea {
+  width: 100%;
+
+  padding: 16px 0;
+
+  border: none;
+
+  border-bottom: 1px solid
+    var(--color-border);
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: var(--color-charcoal);
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-body-sm);
+
+  font-weight: 500;
+
+  transition:
+    border-color 200ms ease,
+    padding-left 200ms ease;
+}
+
+.project-form input::placeholder,
+.project-form textarea::placeholder {
+  color: var(--color-warm-gray);
+
+  opacity: 0.65;
+}
+
+.project-form input:focus,
+.project-form select:focus,
+.project-form textarea:focus {
+  border-color: var(--color-charcoal);
+
+  padding-left: 8px;
+}
+
+/* =================================
+   SELECT
+   ================================= */
+
+.project-form select {
+  cursor: pointer;
+
+  appearance: none;
+
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--color-charcoal) 50%
+    ),
+    linear-gradient(
+      135deg,
+      var(--color-charcoal) 50%,
+      transparent 50%
+    );
+
+  background-position:
+    calc(100% - 8px) 50%,
+    calc(100% - 3px) 50%;
+
+  background-size:
+    6px 6px,
+    6px 6px;
+
+  background-repeat: no-repeat;
+}
+
+/* =================================
+   DATE INPUT
+   ================================= */
+
+.project-form input[type="date"] {
+  color-scheme: light;
+}
+
+/* =================================
+   TEXTAREA
+   ================================= */
+
+.project-form textarea {
+  min-height: 190px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+/* =================================
+   SUBMIT SECTION
+   ================================= */
+
+.project-form__submit {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: var(--space-10);
+
+  padding: var(--space-20) 0;
+}
+
+.project-form__submit > div p:last-child {
+  margin: var(--space-4) 0 0;
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-body-sm);
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: var(--tracking-wide);
+
+  text-transform: uppercase;
+}
+
+/* =================================
+   SUBMIT BUTTON
+   ================================= */
+
+.project-form__submit button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: var(--space-10);
+
+  min-width: 250px;
+
+  padding: 18px 22px;
+
+  border: 1px solid var(--color-charcoal);
+
+  border-radius: 0;
+
+  background: var(--color-charcoal);
+
+  color: var(--color-cream);
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-label-btn);
+
+  font-weight: 600;
+
+  letter-spacing: var(--tracking-btn);
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.project-form__submit button span {
+  font-size: 20px;
+
+  transition: transform 200ms ease;
+}
+
+.project-form__submit button:hover {
+  background: var(--color-coral);
+
+  border-color: var(--color-coral);
+
+  color: var(--color-charcoal);
+
+  transform: translateY(-3px);
+}
+
+.project-form__submit button:hover span {
+  transform: translateX(5px);
+}
+
+.project-form__submit button:focus-visible {
+  outline: 2px solid var(--color-coral);
+
+  outline-offset: 4px;
+}
+
+/* =================================
+   SUCCESS STATE
+   ================================= */
+
+.start-project--success {
+  padding-top: 180px;
+}
+
+.start-project__success {
+  max-width: 1000px;
+
+  padding: var(--space-20) 0;
+}
+
+.start-project__success > span {
+  display: block;
+
+  margin-bottom: var(--space-8);
+
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    40px,
+    5vw,
+    70px
+  );
+
+  font-weight: 900;
+
+  line-height: 0.8;
+
+  letter-spacing: -0.05em;
+}
+
+.start-project__success h1 {
+  margin: 0;
+
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    90px,
+    15vw,
+    220px
+  );
+
+  font-weight: 900;
+
+  line-height: 0.75;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.start-project__success p {
+  max-width: 550px;
+
+  margin: var(--space-10) 0
+    var(--space-8);
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-body-sm);
+
+  line-height: 1.6;
+
+  letter-spacing: var(--tracking-wide);
+
+  text-transform: uppercase;
+
+  color: var(--color-warm-gray);
+}
+
+.start-project__back {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 15px 20px;
+
+  border: 1px solid var(--color-charcoal);
+
+  background: var(--color-charcoal);
+
+  color: var(--color-cream);
+
+  font-family: var(--font-body);
+
+  font-size: var(--text-label-btn);
+
+  font-weight: 600;
+
+  letter-spacing: var(--tracking-btn);
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.start-project__back:hover {
+  background: var(--color-coral);
+
+  border-color: var(--color-coral);
+
+  color: var(--color-charcoal);
+
+  transform: translateY(-3px);
+}
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media (max-width: 767px) {
+  .start-project {
+    padding-top: 120px;
+
+    padding-bottom: var(--space-24);
+  }
+
+  /* HEADER */
+
+  .start-project__header {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: var(--space-10);
+
+    padding-bottom: var(--space-10);
+  }
+
+  .start-project__header h1 {
+    font-size: clamp(
+      70px,
+      21vw,
+      125px
+    );
+  }
+
+  .start-project__intro {
+    padding-bottom: 0;
+  }
+
+  /* FORM */
+
+  .project-form__section {
+    grid-template-columns: 35px 1fr;
+
+    gap: var(--space-4);
+
+    padding: var(--space-10) 0;
+  }
+
+  .project-form__number {
+    font-size: 25px;
+  }
+
+  .project-form__grid {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-8);
+  }
+
+  .project-form__content > .label {
+    margin-bottom: var(--space-6);
+  }
+
+  .project-form input,
+  .project-form select,
+  .project-form textarea {
+    font-size: 14px;
+  }
+
+  .project-form textarea {
+    min-height: 180px;
+  }
+
+  /* SUBMIT */
+
+  .project-form__submit {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: var(--space-12) 0;
+  }
+
+  .project-form__submit button {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  /* SUCCESS */
+
+  .start-project--success {
+    padding-top: 160px;
+  }
+
+  .start-project__success {
+    padding: var(--space-12) 0;
+  }
+
+  .start-project__success h1 {
+    font-size: clamp(
+      70px,
+      22vw,
+      125px
+    );
+  }
+
+  .start-project__success p {
+    font-size: var(--text-label);
+  }
+
+  .start-project__back {
+    width: 100%;
+
+    justify-content: center;
+  }
+}
+
+/* =================================
+   REDUCED MOTION
+   ================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-form input,
+  .project-form select,
+  .project-form textarea,
+  .project-form__submit button,
+  .project-form__submit button span,
+  .start-project__back {
+    transition: none;
+  }
+}
