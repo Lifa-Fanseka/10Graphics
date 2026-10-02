@@ -70,21 +70,7 @@ function Footer() {
               hello@10graphics.co.za
             </a>
 
-            <div className="footer__socials">
-              <a
-                href="#instagram"
-                aria-label="Instagram"
-              >
-                INSTAGRAM
-              </a>
-
-              <a
-                href="#facebook"
-                aria-label="Facebook"
-              >
-                FACEBOOK
-              </a>
-            </div>
+           
           </div>
 
         </div>
